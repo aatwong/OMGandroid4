@@ -47,9 +47,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mainListView = (ListView) findViewById(R.id.main_listview);
 
         // Create an ArrayAdapter for the ListView
-        mArrayAdapter = new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1,
-                mNameList);
+        mArrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,mNameList);
 
         // Set the ListView to use the ArrayAdapter
         mainListView.setAdapter(mArrayAdapter);
